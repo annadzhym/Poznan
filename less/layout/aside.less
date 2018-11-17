@@ -1,0 +1,89 @@
+@import "../utils/mixins";
+.aside {
+  border-right: 1px dotted #d5d5d5;
+  padding: 1% 0;
+  height: inherit;
+  & :last-child {
+    border-bottom: none;
+  }
+  &__block {
+    padding: 12% 8%;
+    border-bottom: 1px dotted #d5d5d5;
+    &--title {
+      padding-bottom: 8%;
+    }
+    &--text {
+      font-family: 'Arial', sans-serif;
+      color:  #5c5c5c;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 18px;
+      text-align: left;
+      &span {
+        font-weight: 700;
+        color: @blue;
+      }
+    }
+    &--flex {
+      display: flex;
+      margin-bottom: 7%;
+    }
+  }
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Arial', sans-serif;
+  color:  #5c5c5c;
+  font-size: 10px;
+  line-height: 18px;
+  text-align: left;
+  margin-left: 5%;
+  &__title {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &__flex {
+    display: flex;
+    justify-content: space-around;
+    & svg {
+      fill: #dddddd;
+    }
+    & span {
+      font-style: italic;
+    }
+  }
+}
+
+.table {
+  border-collapse: collapse;
+  & tr, td {
+    border: 1px solid @white;
+  }
+  &__row {
+    font-family: 'Arial', sans-serif;
+    color: @blue;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: center;
+    background-color: rgba(144, 212, 245, 0.5);
+    & td {
+      padding: 3%;
+      width: 25%;
+    }
+    &--titles {
+      color: @white;
+      background-color: @blue;
+    }
+    &--negative {
+      background-color:  rgba(144, 212, 245, 0.7);
+    }
+    &--redArrow {
+      transform: scale(1, -1);
+      fill: #9f0707;
+    }
+  }
+}

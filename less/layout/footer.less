@@ -1,0 +1,39 @@
+@import "../utils/mixins";
+.footer {
+  &__border {
+    padding: 2% 0;
+    border-bottom: 1px dotted #d5d5d5;
+  }
+  
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__link {
+    font-family: 'Arial', sans-serif;
+    color: @grey;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    &:hover {
+      text-decoration: none;
+      color: @grey;
+    }
+    &:focus {
+      text-decoration: none;
+      color: @blue;
+    }
+  }
+  &__copyright {
+    font-family: 'Arial', sans-serif;
+    color: @greyLighter;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2% 0;
+  }
+}
