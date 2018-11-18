@@ -13,12 +13,8 @@
       padding-bottom: 8%;
     }
     &--text {
-      font-family: 'Arial', sans-serif;
       color:  #5c5c5c;
-      font-size: 10px;
-      font-weight: 400;
-      line-height: 18px;
-      text-align: left;
+      .arial-10-400;
       &span {
         font-weight: 700;
         color: @blue;
@@ -32,14 +28,10 @@
 }
 
 .block {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  font-family: 'Arial', sans-serif;
+  .flex-column-between;
+  .arial-10-400;
+  line-height: 14px;
   color:  #5c5c5c;
-  font-size: 10px;
-  line-height: 18px;
-  text-align: left;
   margin-left: 5%;
   &__title {
     font-weight: 700;
@@ -63,10 +55,8 @@
     border: 1px solid @white;
   }
   &__row {
-    font-family: 'Arial', sans-serif;
+    .arial-10-400;
     color: @blue;
-    font-size: 10px;
-    font-weight: 400;
     line-height: 14px;
     text-align: center;
     background-color: rgba(144, 212, 245, 0.5);

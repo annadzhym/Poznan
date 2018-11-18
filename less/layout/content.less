@@ -9,13 +9,8 @@
   background: white;
   top: -7px;
   &__title {
-    font-family: 'League Gothic', sans-serif;
-    color: @blue;
-    font-size: 32px;
-    font-weight: 400;
-    text-align: left;
+    .league-32-400;
     margin-bottom: 15px;
-    text-transform: uppercase;
   }
   &__circles {
     font-family: 'Arial', sans-serif;
@@ -27,11 +22,9 @@
     justify-content: flex-start;
     padding-left: 0;
     &--size {
+      .flex-center-center;
       width: 52px;
       height: 51px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
     &--date {
       border-radius: 50%;
@@ -43,12 +36,9 @@
     }
   }
   &__info {
-    font-family: 'Arial', sans-serif;
+    .arial-10-400;
     color:  #5c5c5c;
-    font-size: 10px;
-    font-weight: 400;
     line-height: 18px;
-    text-align: left;
     padding: 0 14% 2% 0;
   }
   &__flex {
@@ -68,24 +58,17 @@
     width: 70px;
     height: 21px;
     &--link {
-      font-family: 'Arial', sans-serif;
+      .arial-10-400;
       color: @white;
-      font-size: 10px;
       font-weight: 700;
-      line-height: 18px;
-      text-align: left;
     }
   }
   &__feedbacks {
+    .arial-10-400;
     background-color:  #90d4f5;
     width: 24%;
     height: 27px;
-    font-family: 'Arial', sans-serif;
     color: @blue;
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 18px;
-    text-align: left;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
